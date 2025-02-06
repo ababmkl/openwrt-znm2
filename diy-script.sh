@@ -143,7 +143,9 @@ provided_config_lines=(
     "CONFIG_PACKAGE_luci-theme-design=y"
     "CONFIG_PACKAGE_luci-app-filetransfer=y"
     "CONFIG_PACKAGE_openssh-sftp-server=y"
-    "CONFIG_PACKAGE_luci-app-frpc=m"    
+    "CONFIG_PACKAGE_luci-app-frpc=m" 
+    "CONFIG_OPKG_USE_CURL=y"
+    "CONFIG_PACKAGE_opkg=y"    
 )
 
 if [[ $FIRMWARE_TAG == *"NOWIFI"* ]]; then
