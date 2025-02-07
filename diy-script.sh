@@ -145,7 +145,9 @@ provided_config_lines=(
     "CONFIG_PACKAGE_openssh-sftp-server=y"
     "CONFIG_PACKAGE_luci-app-frpc=m" 
     "CONFIG_OPKG_USE_CURL=y"
-    "CONFIG_PACKAGE_opkg=y"    
+    "CONFIG_PACKAGE_opkg=y"   
+    "CONFIG_USE_APK=n"
+
 )
 
 if [[ $FIRMWARE_TAG == *"NOWIFI"* ]]; then
