@@ -30,6 +30,7 @@ UPDATE_PACKAGE() {
 		"pkg")
 			# 提取每个包
 			for NAME in "${PKG_NAMES[@]}"; do
+   				echo "moving $NAME"
 				cp -rf $(find ./package/$REPO_NAME/*/ -maxdepth 3 -type d -iname "*$NAME*" -prune) ./package/
 			done
 			# 删除剩余的包
