@@ -60,14 +60,6 @@ git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
 #luci-app-zerotier
 git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
 
-#luci theme design
-git clone --depth=1 --filter=blob:none --sparse -b openwrt-23.05 https://github.com/coolsnowwolf/luci.git package/luci-tmp
-cd package/luci-tmp
-git sparse-checkout set themes/luci-theme-design
-cd ../../
-mv package/luci-tmp/themes/luci-theme-design package/luci-theme-design
-rm -rf package/luci-tmp
-
 
 #tailscale
 #sed -i '/\/etc\/init\.d\/tailscale/d;/\/etc\/config\/tailscale/d;' feeds/packages/net/tailscale/Makefile
