@@ -175,7 +175,7 @@ else
     )
 fi
 
-cat ${DTS_PATH}ipq6018-cmiot.dtsi
+cat ${DTS_PATH}ipq6018-256m.dtsi
 
 
 
