@@ -173,6 +173,17 @@ else
         "CONFIG_PACKAGE_kmod-usb-net-rndis=y"
         "CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y"
         "CONFIG_PACKAGE_usbutils=y"
+	"CONFIG_PACKAGE_kmod-usb-acm=y"
+	"CONFIG_PACKAGE_kmod-usb-ehci=y"
+	"CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=y"
+	"CONFIG_PACKAGE_kmod-usb-net-rndis=y"
+	"CONFIG_PACKAGE_kmod-usb-net-asix-ax88179=y"
+	"CONFIG_PACKAGE_kmod-usb-net-rtl8152=y"
+	"CONFIG_PACKAGE_kmod-usb-net-sierrawireless=y"
+	"CONFIG_PACKAGE_kmod-usb-ohci=y"
+	"CONFIG_PACKAGE_kmod-usb-serial-qualcomm=y"
+	"CONFIG_PACKAGE_kmod-usb-storage=y"
+	"CONFIG_PACKAGE_kmod-usb2=y"
     )
 fi
 
