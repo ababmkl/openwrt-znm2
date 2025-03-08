@@ -278,6 +278,10 @@ sed -i "/exit 0/i\\
 sed -ri \'/check_signature/s@^[^#]@#&@\' /etc/opkg.conf\n" "package/emortal/default-settings/files/99-default-settings"
 
 
-#补齐依赖
-sudo bash -c 'bash <(curl -sL https://build-scripts.immortalwrt.org/init_build_environment.sh)'
-
+#update golang
+GOLANG_REPO="https://github.com/sbwml/packages_lang_golang"
+GOLANG_BRANCH="24.x"
+if [[ -d ./feeds/packages/lang/golang ]]; then
+	\rm -rf ./feeds/packages/lang/golang
+	git clone $GOLANG_REPO -b $GOLANG_BRANCH ./feeds/packages/lang/golang
+fi
