@@ -154,7 +154,7 @@ provided_config_lines=(
     "CONFIG_USE_APK=n"
     "CONFIG_PACKAGE_luci-app-tailscale=y"
     #"CONFIG_PACKAGE_luci-app-msd_lite=y"
-
+    "CONFIG_PACKAGE_luci-app-lucky=y"
 )
 
 if [[ $FIRMWARE_TAG == *"NOWIFI"* ]]; then
@@ -243,7 +243,6 @@ cat ${DTS_PATH}ipq6018-256m.dtsi
     "CONFIG_PACKAGE_kmod-veth=y"
     "CONFIG_PACKAGE_automount=y"
     "CONFIG_PACKAGE_luci-app-frps=y"    
-
 )
 
 # Append configuration lines to .config
