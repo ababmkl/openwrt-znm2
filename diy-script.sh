@@ -154,7 +154,7 @@ provided_config_lines=(
     "CONFIG_USE_APK=n"
     "CONFIG_PACKAGE_luci-app-tailscale=y"
     #"CONFIG_PACKAGE_luci-app-msd_lite=y"
-    "CONFIG_PACKAGE_luci-app-lucky=y"
+    #"CONFIG_PACKAGE_luci-app-lucky=y"
 )
 
 if [[ $FIRMWARE_TAG == *"NOWIFI"* ]]; then
