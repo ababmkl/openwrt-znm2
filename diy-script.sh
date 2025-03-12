@@ -47,7 +47,7 @@ UPDATE_PACKAGE() {
 # 添加额外插件
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 
-#git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 
 # 科学上网插件
 #UPDATE_PACKAGE "homeproxy" "https://github.com/VIKINGYFY/homeproxy.git" "main"
